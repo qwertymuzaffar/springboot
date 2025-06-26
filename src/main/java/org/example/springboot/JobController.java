@@ -36,4 +36,16 @@ public class JobController {
         }
         return jobsList;
     }
+
+    @GetMapping("/jobs/search/{query}")
+    public ArrayList<Job> searchJobs(@PathVariable String query) {
+        ArrayList<Job> matchingJobs = new ArrayList<>();
+        for (Job job : jobsList) {
+            if (job.getTitle().toLowerCase().contains(query.toLowerCase()) ||
+                    job.getDescription().toLowerCase().contains(query.toLowerCase())) {
+                matchingJobs.add(job);
+            }
+        }
+        return matchingJobs;
+    }
 }
