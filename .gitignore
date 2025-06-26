@@ -1,0 +1,36 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+# Gradle
+.gradle/
+build/
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+# Compiled and packaged files
+*.jar
+*.war
+*.ear
+# Log files
+*.log
+logs/
+# Environment-specific properties (sensitive data)
+application-dev.properties
+application-prod.properties
+application-local.properties
+# Other common files to ignore
+.DS_Store
+Thumbs.db
+# Spring Boot specific
+/src/main/resources/static/
+/src/main/resources/templates/
